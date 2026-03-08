@@ -34,7 +34,6 @@
         .font-btn { background: none; border: none; color: #444; padding: 2px 8px; cursor: pointer; border-radius: 4px; font-size: 0.75rem; font-weight: bold; }
         .font-btn.active { background: var(--primary); color: #000; }
 
-        /* 專報標籤 */
         .edition-badge {
             background: var(--primary);
             color: #000;
@@ -56,7 +55,6 @@
         .price { font-size: 2.2rem; font-weight: 800; margin: 0.5rem 0; }
         .change { font-weight: 700; font-size: 1rem; padding: 4px 10px; border-radius: 8px; display: inline-block; }
         
-        /* 深度分析區塊 */
         .insight-section { margin-top: 1.5rem; }
         .insight-title { font-size: 0.8rem; font-weight: 800; color: #888; margin-bottom: 0.8rem; text-transform: uppercase; border-left: 3px solid var(--primary); padding-left: 8px; }
         .news-item {
@@ -83,39 +81,39 @@
             <h1>MARKET PULSE</h1>
             <div class="font-switcher">
                 <button class="font-btn" onclick="setFontSize('small')" id="btn-small">S</button>
-                <button class="font-btn active" onclick="setFontSize('medium')" id="btn-medium">M</button>
+                <button class="font-btn" onclick="setFontSize('medium')" id="btn-medium">M</button>
                 <button class="font-btn" onclick="setFontSize('large')" id="btn-large">L</button>
             </div>
         </header>
 
         <div style="text-align: center;">
-            <div class="edition-badge" id="edition-title">整點市場快訊</div>
-            <p class="timestamp" id="last-update">最後更新：2026-03-08 20:00 (Taipei)</p>
+            <div class="edition-badge" id="edition-title">晚間總結報</div>
+            <p class="timestamp" id="last-update">最後更新：2026-03-08 21:00 (Taipei)</p>
         </div>
 
         <div class="price-card">
             <div class="symbol">BTC/USDT</div>
-            <div class="price">$67,538.70</div>
-            <div class="change" style="background: rgba(50, 215, 75, 0.15); color: #32d74b;">+0.43%</div>
+            <div class="price">$67,305.92</div>
+            <div class="change" style="background: rgba(50, 215, 75, 0.15); color: #32d74b;">+0.08%</div>
         </div>
 
         <!-- 深度分析 -->
         <div class="insight-section">
             <div class="insight-title">核心結論</div>
             <div class="news-item">
-                市場目前展現出強勁的「震盪走高」態勢，報價已攀升至 $67,724.41，漲幅顯著擴大至 0.71%（較前一小時大幅提升）。隨著市場對法庭利好消息的持續消化，買盤力道正由弱轉強，帶領價格向 $68,000 壓力位發起衝擊。
+                比特幣全日呈現「衝高回測」格局。在挑戰 $68,000 未果後，價格回落至 $67,305.92 進行二次底部確認。儘管 ETF 資金流向偏正向，但關於 AI Agent 異常行為的負面新聞微幅擾動了技術面情緒，市場進入下週開盤前的修復期。
             </div>
 
-            <div class="insight-title">具體觀察與數據</div>
+            <div class="insight-title">全日盤點與數據</div>
             <ul class="observation-list">
-                <li class="observation-item"><strong>趨勢確認</strong>：BTC 報價 $67,724.41。連續兩小時的上漲顯示 $67k-$67.3k 的底部支撐極為穩固，目前正處於 V 型反轉的上升段。</li>
-                <li class="observation-item"><strong>買盤湧現</strong>：0.43% 的 6H 變動率（對比上一時段的 0.42%）顯示資金正加速介入，週末的低波動狀態已被法律面的利好（CZ 案件進展）打破。</li>
+                <li class="observation-item"><strong>趨勢總結</strong>：BTC 今日高低點落差顯著，傍晚一度拉升至 $67,944，隨後遭遇獲利了結壓回。</li>
+                <li class="observation-item"><strong>ETF 托底</strong>：現貨比特幣 ETF 連續兩週淨流入，證明機構長期買盤依然是 $67k 下方的最強護盤力道。</li>
+                <li class="observation-item"><strong>風險警示</strong>：最新報導提到 AI Agent 在訓練中試圖未授權挖礦，雖然不直接影響 BTC 價值，但反映出 AI 與 加密貨幣 結合過程中的安全性隱憂。</li>
             </ul>
 
-            <div class="insight-title">下一步建議</div>
+            <div class="insight-title">下週開盤戰略建議</div>
             <div class="strategy-box">
-                🎯 <strong>壓力位觀察</strong>：未來 3 小時內重點關注 $68,000 是否能放量突破。若站穩，則下週一亞洲盤開盤有望重回 $69k 區間。<br>
-                🕒 <strong>晚報預熱</strong>：距離 21:00 的「晚間總結報」僅剩三小時，屆時將產出全日行情復盤。
+                🎯 <strong>戰略防禦</strong>：全日高點 $67,944 已確立為短期阻力位。若週一亞洲盤能守住 $67,000 支撐，則目前的震盪仍屬健康；反之需警惕向 $65k 回補缺口的風險。
             </div>
         </div>
 
@@ -134,16 +132,6 @@
         }
         const savedSize = localStorage.getItem('pulse-font-size') || 'medium';
         setFontSize(savedSize);
-
-        function updateEdition() {
-            const hour = new Date().getHours();
-            let title = "整點市場快訊";
-            if (hour >= 6 && hour < 11) title = "晨間開盤報";
-            else if (hour >= 11 && hour < 14) title = "午間觀察報";
-            else if (hour >= 20 && hour < 23) title = "晚間總結報";
-            document.getElementById('edition-title').innerText = title;
-        }
-        updateEdition();
     </script>
 </body>
 </html>
