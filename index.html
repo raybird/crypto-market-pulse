@@ -11,6 +11,7 @@
             --card-bg: #111114;
             --text: #ffffff;
             --negative: #ff453a;
+            --positive: #32d74b;
             --edition-bg: #1a1a1e;
         }
         html[data-size="small"] { font-size: 14px; }
@@ -55,10 +56,24 @@
         .price { font-size: 2.2rem; font-weight: 800; margin: 0.5rem 0; }
         .change { font-weight: 700; font-size: 1rem; padding: 4px 10px; border-radius: 8px; display: inline-block; }
         
+        /* 深度分析區塊 */
+        .insight-section { margin-top: 1.5rem; }
+        .insight-title { font-size: 0.8rem; font-weight: 800; color: #888; margin-bottom: 0.8rem; text-transform: uppercase; border-left: 3px solid var(--primary); padding-left: 8px; }
         .news-item {
-            background: #16161a; padding: 1rem; border-radius: 12px; margin-bottom: 0.8rem;
-            font-size: 0.9rem; line-height: 1.4; border-left: 3px solid var(--primary);
+            background: #16161a; padding: 1.2rem; border-radius: 12px; margin-bottom: 1rem;
+            font-size: 0.95rem; line-height: 1.6; color: #eee;
         }
+        .observation-list { list-style: none; padding: 0; margin: 0; }
+        .observation-item {
+            font-size: 0.9rem; color: #aaa; margin-bottom: 8px; padding-left: 18px; position: relative;
+        }
+        .observation-item::before { content: "●"; color: var(--primary); position: absolute; left: 0; font-size: 0.7rem; top: 4px; }
+        
+        .strategy-box {
+            background: rgba(0, 212, 255, 0.05); border: 1px dashed var(--primary);
+            padding: 1rem; border-radius: 8px; margin-top: 1rem; font-size: 0.85rem; color: var(--primary);
+        }
+
         footer { text-align: center; color: #444; font-size: 0.7rem; margin-top: 3rem; }
     </style>
 </head>
@@ -84,8 +99,24 @@
             <div class="change" style="background: rgba(50, 215, 75, 0.15); color: #32d74b;">+0.71%</div>
         </div>
 
-        <div id="report-content">
-            <div class="news-item">市場多頭力道增強，比特幣價格穩步攀升至 $67.7k 區間。隨著法律不確定性的消退，資金正加速回流現貨市場，短期內展現出強勁的修復動能。</div>
+        <!-- 深度分析 -->
+        <div class="insight-section">
+            <div class="insight-title">核心結論</div>
+            <div class="news-item">
+                市場目前展現出強勁的「震盪走高」態勢，報價已攀升至 $67,724.41，漲幅顯著擴大至 0.71%（較前一小時大幅提升）。隨著市場對法庭利好消息的持續消化，買盤力道正由弱轉強，帶領價格向 $68,000 壓力位發起衝擊。
+            </div>
+
+            <div class="insight-title">具體觀察與數據</div>
+            <ul class="observation-list">
+                <li class="observation-item"><strong>趨勢確認</strong>：BTC 報價 $67,724.41。連續兩小時的上漲顯示 $67k-$67.3k 的底部支撐極為穩固，目前正處於 V 型反轉的上升段。</li>
+                <li class="observation-item"><strong>買盤湧現</strong>：0.71% 的 6H 變動率（對比上一時段的 0.42%）顯示資金正加速介入，週末的低波動狀態已被法律面的利好（CZ 案件進展）打破。</li>
+            </ul>
+
+            <div class="insight-title">下一步建議</div>
+            <div class="strategy-box">
+                🎯 <strong>壓力位觀察</strong>：未來 3 小時內重點關注 $68,000 是否能放量突破。若站穩，則下週一亞洲盤開盤有望重回 $69k 區間。<br>
+                🕒 <strong>晚報預熱</strong>：距離 21:00 的「晚間總結報」僅剩三小時，屆時將產出全日行情復盤。
+            </div>
         </div>
 
         <footer>
@@ -104,7 +135,6 @@
         const savedSize = localStorage.getItem('pulse-font-size') || 'medium';
         setFontSize(savedSize);
 
-        // 動態設定專報標題 (模擬下一次自動更新後的顯示)
         function updateEdition() {
             const hour = new Date().getHours();
             let title = "整點市場快訊";
