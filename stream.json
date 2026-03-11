@@ -1,8 +1,15 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-12T06:00:00+08:00",
+  "updated_at": "2026-03-12T07:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-12T07:00:00+08:00",
+      "price": 70357.59,
+      "change": "+0.57%",
+      "version": "亞盤開盤前哨報",
+      "causal_summary": "BTC 在 $70k 位階展現磁吸效應，亞盤開盤前完成高位換手，蓄勢發起 ATH 物理爆破。"
+    },
     {
       "timestamp": "2026-03-12T06:00:00+08:00",
       "price": 70737.30,
@@ -30,13 +37,6 @@
       "change": "-1.01%",
       "version": "美股開盤前夕盤整報",
       "causal_summary": "DOJ 調查幣安引發短期熵值，回測 $69.2k 韌性地板完成壓力測試。"
-    },
-    {
-      "timestamp": "2026-03-11T19:00:00+08:00",
-      "price": 69590.63,
-      "change": "-0.52%",
-      "version": "美股開盤前夕報",
-      "causal_summary": "20M 稀缺之牆共鳴達 94%，Tesla Optimus 靈巧手預告注入物理生產力溢價。"
     }
   ]
 }
