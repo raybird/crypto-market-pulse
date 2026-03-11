@@ -1,0 +1,42 @@
+{
+  "project": "crypto-market-pulse",
+  "pillar": "CRYPTO",
+  "updated_at": "2026-03-12T06:00:00+08:00",
+  "history": [
+    {
+      "timestamp": "2026-03-12T06:00:00+08:00",
+      "price": 70737.30,
+      "change": "+1.12%",
+      "version": "亞盤晨間正式報",
+      "causal_summary": "BTC 站穩 $70k 鋼鐵地板，96% 看漲共識誘發空頭擠壓預演，目標衝擊 $73,777 (ATH)。"
+    },
+    {
+      "timestamp": "2026-03-11T22:00:00+08:00",
+      "price": 70047.02,
+      "change": "+0.13%",
+      "version": "全域對稱正式報",
+      "causal_summary": "SEC-CFTC 聯合框架注入制度信用，收復 $70k 大關，規訓幣安監管噪音。"
+    },
+    {
+      "timestamp": "2026-03-11T21:00:00+08:00",
+      "price": 69370.09,
+      "change": "-0.84%",
+      "version": "美股開盤助漲報",
+      "causal_summary": "AI 風險論轉化為安全隔離剛需，助漲彈簧壓至極限位。"
+    },
+    {
+      "timestamp": "2026-03-11T20:00:00+08:00",
+      "price": 69247.87,
+      "change": "-1.01%",
+      "version": "美股開盤前夕盤整報",
+      "causal_summary": "DOJ 調查幣安引發短期熵值，回測 $69.2k 韌性地板完成壓力測試。"
+    },
+    {
+      "timestamp": "2026-03-11T19:00:00+08:00",
+      "price": 69590.63,
+      "change": "-0.52%",
+      "version": "美股開盤前夕報",
+      "causal_summary": "20M 稀缺之牆共鳴達 94%，Tesla Optimus 靈巧手預告注入物理生產力溢價。"
+    }
+  ]
+}
