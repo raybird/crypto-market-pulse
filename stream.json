@@ -1,8 +1,15 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-12T11:00:00+08:00",
+  "updated_at": "2026-03-12T12:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-12T12:00:00+08:00",
+      "price": 69450.17,
+      "change": "-1.07%",
+      "version": "午間正式報 (Noon Official)",
+      "causal_summary": "$69.3k 地板通過極限韌性審計，Binance.US 規訓新生中和油價熵值，市場完成亞盤因果換手。"
+    },
     {
       "timestamp": "2026-03-12T11:00:00+08:00",
       "price": 69338.48,
@@ -23,13 +30,6 @@
       "change": "+0.33%",
       "version": "亞盤正式開盤報",
       "causal_summary": "BTC 穩守 $70k 主權跳板，亞盤開盤量能注入觸發空頭擠壓加速，目標挑戰 $73,777 (ATH)。"
-    },
-    {
-      "timestamp": "2026-03-12T07:00:00+08:00",
-      "price": 70357.59,
-      "change": "+0.57%",
-      "version": "亞盤開盤前哨報",
-      "causal_summary": "BTC 在 $70k 位階展現磁吸效應，亞盤開盤前完成高位換手，蓄勢發起 ATH 物理爆破。"
     },
     {
       "timestamp": "2026-03-12T06:00:00+08:00",
