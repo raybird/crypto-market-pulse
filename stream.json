@@ -1,14 +1,14 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-12T10:00:00+08:00",
+  "updated_at": "2026-03-12T11:00:00+08:00",
   "history": [
     {
-      "timestamp": "2026-03-12T10:00:00+08:00",
-      "price": 69807.67,
-      "change": "-0.56%",
-      "version": "亞盤盤中審計報",
-      "causal_summary": "油價飆升至 $98.6 引發滯脹恐慌，BTC 回測 $69.8k 進行地板韌性測試，制度緩衝仍強勁。"
+      "timestamp": "2026-03-12T11:00:00+08:00",
+      "price": 69338.48,
+      "change": "-1.23%",
+      "version": "亞盤午間結算報",
+      "causal_summary": "油價破百壓力引發亞盤午間回測，BTC 精確回踩 $69.3k 地板，完成歐盤發動前的能量排毒。"
     },
     {
       "timestamp": "2026-03-12T09:00:00+08:00",
