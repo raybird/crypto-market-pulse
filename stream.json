@@ -1,8 +1,15 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-12T09:00:00+08:00",
+  "updated_at": "2026-03-12T10:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-12T10:00:00+08:00",
+      "price": 69807.67,
+      "change": "-0.56%",
+      "version": "亞盤盤中審計報",
+      "causal_summary": "油價飆升至 $98.6 引發滯脹恐慌，BTC 回測 $69.8k 進行地板韌性測試，制度緩衝仍強勁。"
+    },
     {
       "timestamp": "2026-03-12T09:00:00+08:00",
       "price": 70225.74,
@@ -30,13 +37,6 @@
       "change": "+1.12%",
       "version": "亞盤晨間正式報",
       "causal_summary": "BTC 站穩 $70k 鋼鐵地板，96% 看漲共識誘發空頭擠壓預演，目標衝擊 $73,777 (ATH)。"
-    },
-    {
-      "timestamp": "2026-03-11T22:00:00+08:00",
-      "price": 70047.02,
-      "change": "+0.13%",
-      "version": "全域對稱正式報",
-      "causal_summary": "SEC-CFTC 聯合框架注入制度信用，收復 $70k 大關，規訓幣安監管噪音。"
     }
   ]
 }

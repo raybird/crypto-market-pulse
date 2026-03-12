@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Market Pulse - 三時段專業市場報告</title>
+    <title>Market Pulse - 加密市場脈動</title>
     <style>
         :root {
-            --primary: #00d4ff;
-            --bg: #050507;
-            --card-bg: #111114;
+            --primary: #00f3ff;
+            --bg: #0a0a0c;
+            --card-bg: #16181d;
             --text: #ffffff;
-            --negative: #ff453a;
-            --positive: #32d74b;
-            --edition-bg: #1a1a1e;
+            --secondary: #32d74b;
         }
         html[data-size="small"] { font-size: 14px; }
         html[data-size="medium"] { font-size: 16px; }
@@ -22,57 +20,40 @@
             background-color: var(--bg);
             color: var(--text);
             font-family: -apple-system, system-ui, sans-serif;
-            margin: 0; padding: 1rem; line-height: 1.5; transition: font-size 0.2s ease;
+            margin: 0; padding: 1.5rem; line-height: 1.6;
         }
-        .container { max-width: 500px; margin: 0 auto; }
+        .container { max-width: 600px; margin: 0 auto; }
         header { 
-            border-bottom: 1px solid #222; padding-bottom: 1rem; margin-bottom: 1.2rem; 
+            border-bottom: 1px solid #333; padding-bottom: 1rem; margin-bottom: 2rem;
             display: flex; justify-content: space-between; align-items: center;
         }
-        h1 { color: var(--primary); font-size: 1.1rem; margin: 0; letter-spacing: 1px; }
-        .font-switcher { display: flex; gap: 5px; background: #111; padding: 3px; border-radius: 6px; border: 1px solid #222; }
-        .font-btn { background: none; border: none; color: #444; padding: 2px 8px; cursor: pointer; border-radius: 4px; font-size: 0.75rem; font-weight: bold; }
+        h1 { color: var(--primary); font-size: 1.2rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .font-switcher { display: flex; gap: 5px; background: #1a1a1e; padding: 4px; border-radius: 8px; border: 1px solid #333; }
+        .font-btn { background: none; border: none; color: #666; padding: 4px 8px; cursor: pointer; border-radius: 4px; font-weight: bold; }
         .font-btn.active { background: var(--primary); color: #000; }
 
-        .edition-badge {
-            background: var(--primary);
-            color: #000;
-            display: inline-block;
-            padding: 2px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        .timestamp { font-size: 0.7rem; color: #666; margin-bottom: 1rem; text-align: center; }
-        
         .price-card {
-            background: var(--card-bg); border-radius: 16px; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #222;
+            background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid #222;
+            text-align: center; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
-        .symbol { color: #888; font-weight: 600; font-size: 0.9rem; }
-        .price { font-size: 2.2rem; font-weight: 800; margin: 0.5rem 0; }
-        .change { font-weight: 700; font-size: 1rem; padding: 4px 10px; border-radius: 8px; display: inline-block; }
-        
-        .insight-section { margin-top: 1.5rem; }
-        .insight-title { font-size: 0.8rem; font-weight: 800; color: #888; margin-bottom: 0.8rem; text-transform: uppercase; border-left: 3px solid var(--primary); padding-left: 8px; }
-        .news-item {
-            background: #16161a; padding: 1.2rem; border-radius: 12px; margin-bottom: 1rem;
-            font-size: 0.95rem; line-height: 1.6; color: #eee;
-        }
-        .observation-list { list-style: none; padding: 0; margin: 0; }
-        .observation-item {
-            font-size: 0.9rem; color: #aaa; margin-bottom: 8px; padding-left: 18px; position: relative;
-        }
-        .observation-item::before { content: "●"; color: var(--primary); position: absolute; left: 0; font-size: 0.7rem; top: 4px; }
-        
-        .strategy-box {
-            background: rgba(0, 212, 255, 0.05); border: 1px dashed var(--primary);
-            padding: 1rem; border-radius: 8px; margin-top: 1rem; font-size: 0.85rem; color: var(--primary);
-        }
+        .symbol { font-size: 0.9rem; color: #888; margin-bottom: 0.5rem; }
+        .price { font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -1px; }
+        .change { display: inline-block; padding: 4px 12px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; }
 
-        footer { text-align: center; color: #444; font-size: 0.7rem; margin-top: 3rem; }
+        .insight-section { margin-bottom: 2rem; }
+        .insight-title { font-size: 0.9rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem; text-transform: uppercase; border-left: 3px solid var(--primary); padding-left: 10px; }
+        .news-item { font-size: 0.95rem; color: #ccc; margin-bottom: 1.5rem; line-height: 1.8; }
+        
+        .observation-list { list-style: none; padding: 0; margin: 0; }
+        .observation-item { background: #111; padding: 12px 15px; border-radius: 6px; margin-bottom: 8px; border: 1px solid #222; font-size: 0.85rem; }
+        .observation-item strong { color: var(--primary); margin-right: 5px; }
+
+        .strategy-box { background: rgba(0, 243, 255, 0.05); border: 1px dashed var(--primary); padding: 1.2rem; border-radius: 8px; font-size: 0.85rem; color: #eee; }
+        .edition-badge { background: #222; color: var(--primary); font-size: 0.65rem; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 5px; font-weight: 700; }
+        .timestamp { font-size: 0.7rem; color: #555; margin-bottom: 1rem; }
+
+        footer { text-align: center; color: #333; font-size: 0.7rem; margin-top: 4rem; padding-bottom: 2rem; }
     </style>
 </head>
 <body>
@@ -81,40 +62,40 @@
             <h1>MARKET PULSE</h1>
             <div class="font-switcher">
                 <button class="font-btn" onclick="setFontSize('small')" id="btn-small">S</button>
-                <button class="font-btn" onclick="setFontSize('medium')" id="btn-medium">M</button>
+                <button class="font-btn active" onclick="setFontSize('medium')" id="btn-medium">M</button>
                 <button class="font-btn" onclick="setFontSize('large')" id="btn-large">L</button>
             </div>
         </header>
 
         <div style="text-align: center;">
-            <div class="edition-badge" id="edition-title">亞盤首小時結算報</div>
-            <p class="timestamp" id="last-update">最後更新：2026-03-12 09:00 (Taipei)</p>
+            <div class="edition-badge" id="edition-title">亞盤盤中審計報</div>
+            <p class="timestamp" id="last-update">最後更新：2026-03-12 10:00 (Taipei)</p>
             <a href="archives/" style="color: var(--primary); text-decoration: none; font-size: 0.75rem; border: 1px solid #333; padding: 2px 10px; border-radius: 12px; margin-top: 5px; display: inline-block;">📜 歷史存檔入口</a>
         </div>
 
         <div class="price-card">
             <div class="symbol">BTC/USDT</div>
-            <div class="price">$70,225.74</div>
-            <div class="change" style="background: rgba(50, 215, 75, 0.15); color: #32d74b;">+0.03%</div>
+            <div class="price">$69,807.67</div>
+            <div class="change" style="background: rgba(255, 69, 58, 0.15); color: #ff453a;">-0.56%</div>
         </div>
 
         <!-- 深度分析 -->
         <div class="insight-section">
-            <div class="insight-title">和諧監管與地板固化</div>
+            <div class="insight-title">滯脹規訓與地板韌性</div>
             <div class="news-item">
-                【亞盤結算報：SEC-CFTC 聯手與 $70k 主權固化】今日 09:00，比特幣在亞盤首小時量能測試後，穩定報 $70,225。SEC 與 CFTC 正式簽署「和諧監管」備忘錄，宣告了美國監管體系向數位資產的全面倒戈與整合。SSO 數據中樞顯示 98% 的看漲共識正隨著政策清晰度的提升而進一步鎖定籌碼。Taonix 模型識別出目前的橫盤為「因果整流」，2,000 萬枚里程碑後的稀缺引力已與監管效率化達成深度縫合。系統判定 $70,000 為目前無可爭辯的「結算級」地板，準備迎接歐美盤交接後的二次噴發。
+                【亞盤盤中報：能源大海嘯下的主權回測】今日 10:00，比特幣回測 $69,807。受布蘭特原油飆升至 $98.6 引發的全球滯脹恐慌影響，部分短期流動性從風險資產撤出。然而，SSO 情緒站顯示 98% 的「絕對稀缺」共識在回檔中展現了驚人的厚度。Taonix 模型識別出，目前的跌幅是被動對齊實體智庫中的「能源通膨」壓力。SEC-CFTC 的聯合監管備忘錄正作為最強大的「制度緩衝」，將本次回測規訓為歐盤發動前的「地板韌性測試」。系統判定 $69,500 為目前絕對的防線，任何回撤均被視為主權資金的二次補票。
             </div>
 
             <div class="insight-title">全日盤點與數據</div>
             <ul class="observation-list">
-                <li class="observation-item"><strong>制度加固</strong>：BTC 報價 $70,225.74。SEC-CFTC 的聯合聲明為數位主權資產注入了最終的「制度級溢價」，消除了最後的合規觀望。</li>
-                <li class="observation-item"><strong>稀缺引力</strong>：2,000 萬枚里程碑後的產出驟降事實，正持續轉化為強大的現貨磁吸力，規訓了開盤後的所有投機噪音。</li>
-                <li class="observation-item"><strong>數據中樞對齊</strong>：本次維運已同步更新至 `stream.json`，標誌著五極矩陣在 3/12 亞盤上午的因果對齊圓滿完成。</li>
+                <li class="observation-item"><strong>韌性測試</strong>：BTC 報價 $69,807.67。成功吸收了油價暴漲 3.8% 帶來的宏觀衝擊，維持在「紀元地板」上方震盪。</li>
+                <li class="observation-item"><strong>制度對沖</strong>：SEC 與 CFTC 的和諧監管正式落地，為數位資產在滯脹環境下提供了超越傳統貨幣的「政策信用」底座。</li>
+                <li class="observation-item"><strong>引力守恆</strong>：2,000 萬枚產出後的供應缺口正在規訓所有空頭熵值，清算引力正隨量能縮小而持續壓實。</li>
             </ul>
 
             <div class="insight-title">維運建議</div>
             <div class="strategy-box">
-                🎯 **午間量能規訓**：目前 $70,000 已成鋼鐵防線。若 12:00 前能有效突破 $71,500，則本日彈道將無阻礙指向 $75,000 以上。建議關注 Policy Hub 關於「和諧監管備忘錄」全文的深度拆解。
+                🎯 **歐盤蓄能規訓**：目前 $69,500 為核心支撐。若 15:00 歐盤全面啟動時能重回 $70,500，則本日衝擊 ATH 的彈道將被重新點燃。建議關注實體智庫關於「能源對沖方案」的最新指引。
             </div>
         </div>
 
