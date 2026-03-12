@@ -1,8 +1,15 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-12T08:00:00+08:00",
+  "updated_at": "2026-03-12T09:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-12T09:00:00+08:00",
+      "price": 70225.74,
+      "change": "+0.03%",
+      "version": "亞盤首小時結算報",
+      "causal_summary": "SEC-CFTC 聯合聲明加固 $70k 位階，市場完成因果換手，確立『結算級』物理地板。"
+    },
     {
       "timestamp": "2026-03-12T08:00:00+08:00",
       "price": 70190.37,
@@ -30,13 +37,6 @@
       "change": "+0.13%",
       "version": "全域對稱正式報",
       "causal_summary": "SEC-CFTC 聯合框架注入制度信用，收復 $70k 大關，規訓幣安監管噪音。"
-    },
-    {
-      "timestamp": "2026-03-11T21:00:00+08:00",
-      "price": 69370.09,
-      "change": "-0.84%",
-      "version": "美股開盤助漲報",
-      "causal_summary": "AI 風險論轉化為安全隔離剛需，助漲彈簧壓至極限位。"
     }
   ]
 }
