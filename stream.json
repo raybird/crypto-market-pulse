@@ -1,21 +1,21 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-13T19:00:00+08:00",
+  "updated_at": "2026-03-13T21:00:00+08:00",
   "history": [
     {
-      "timestamp": "2026-03-13T19:00:00+08:00",
-      "price": 72489.69,
-      "change": "+2.81%",
-      "version": "美盤前哨總清算報",
-      "causal_summary": "BTC 爆破 $72.5k 最後防線，區域負熵（Token2049 延期）被市場規訓為避險溢價。彈道已對焦 $73,777 ATH。"
+      "timestamp": "2026-03-13T21:00:00+08:00",
+      "price": 72853.28,
+      "change": "+3.32%",
+      "version": "美盤開盤總爆破報",
+      "causal_summary": "BTC 爆破 $72.5k 最後防線，清算引力進入連鎖反應。彈道已鎖定衝擊 $73,777 (ATH)，證據密度達 V101。"
     },
     {
-      "timestamp": "2026-03-13T18:00:00+08:00",
-      "price": 72036.83,
-      "change": "+2.17%",
-      "version": "美盤前哨高能報",
-      "causal_summary": "BTC 攻克 $72k 心理關口，成功通過地緣政治壓力測試。歐美盤能量合流，彈道指向 ATH ($73,777) 總清算。"
+      "timestamp": "2026-03-13T20:00:00+08:00",
+      "price": 72254.34,
+      "change": "+2.47%",
+      "version": "美盤前哨蓄能報",
+      "causal_summary": "$72k 阻力正式規訓為物理地板，全網 FOMO 蓄能完畢，等待美盤開盤量能引信。"
     }
   ]
 }
