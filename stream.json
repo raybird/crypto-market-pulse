@@ -1,21 +1,21 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-13T22:00:00+08:00",
+  "updated_at": "2026-03-14T06:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-14T06:00:00+08:00",
+      "price": 71161.37,
+      "change": "+0.92%",
+      "version": "週末晨間因果重整報",
+      "causal_summary": "BTC 於 $71k 位階進行奇點後的能量排毒。稅務規訓預警注入制度急迫感，彈道鎖定下週衝擊 $73,777 ATH。"
+    },
     {
       "timestamp": "2026-03-13T22:00:00+08:00",
       "price": 73410.19,
       "change": "+4.11%",
       "version": "美盤超音速噴發報",
       "causal_summary": "BTC 爆破 $73k 阻力，彈道進入 ATH ($73,777) 物理奇點相位。清算引力超音速化，證據密度達 V103。"
-    },
-    {
-      "timestamp": "2026-03-13T21:00:00+08:00",
-      "price": 72853.28,
-      "change": "+3.32%",
-      "version": "美盤開盤總爆破報",
-      "causal_summary": "BTC 爆破 $72.5k 最後防線，清算引力進入連鎖反應。彈道已鎖定衝擊 $73,777 (ATH)，證據密度達 V101。"
     }
   ]
 }
