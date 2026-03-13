@@ -1,8 +1,15 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-13T16:00:00+08:00",
+  "updated_at": "2026-03-13T17:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-13T17:00:00+08:00",
+      "price": 71818.42,
+      "change": "+1.86%",
+      "version": "歐盤高能噴發報",
+      "causal_summary": "$71.5k 轉化為物理跳板，阿里巴巴入局 MetaComp 注入制度利多，BTC 鎖定 ATH 爆破彈道。"
+    },
     {
       "timestamp": "2026-03-13T16:00:00+08:00",
       "price": 71622.69,
@@ -16,13 +23,6 @@
       "change": "-1.07%",
       "version": "午間正式報 (Noon Official)",
       "causal_summary": "$69.3k 地板通過極限韌性審計，Binance.US 規訓新生中和油價熵值，市場完成亞盤因果換手。"
-    },
-    {
-      "timestamp": "2026-03-12T11:00:00+08:00",
-      "price": 69338.48,
-      "change": "-1.23%",
-      "version": "亞盤午間結算報",
-      "causal_summary": "油價破百壓力引發亞盤午間回測，BTC 精確回踩 $69.3k 地板，完成歐盤發動前的能量排毒。"
     }
   ]
 }
