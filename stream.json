@@ -1,28 +1,21 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-13T18:00:00+08:00",
+  "updated_at": "2026-03-13T19:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-13T19:00:00+08:00",
+      "price": 72489.69,
+      "change": "+2.81%",
+      "version": "美盤前哨總清算報",
+      "causal_summary": "BTC 爆破 $72.5k 最後防線，區域負熵（Token2049 延期）被市場規訓為避險溢價。彈道已對焦 $73,777 ATH。"
+    },
     {
       "timestamp": "2026-03-13T18:00:00+08:00",
       "price": 72036.83,
       "change": "+2.17%",
       "version": "美盤前哨高能報",
       "causal_summary": "BTC 攻克 $72k 心理關口，成功通過地緣政治壓力測試。歐美盤能量合流，彈道指向 ATH ($73,777) 總清算。"
-    },
-    {
-      "timestamp": "2026-03-13T17:00:00+08:00",
-      "price": 71818.42,
-      "change": "+1.86%",
-      "version": "歐盤高能噴發報",
-      "causal_summary": "$71.5k 轉化為物理跳板，阿里巴巴入局 MetaComp 注入制度利多，BTC 鎖定 ATH 爆破彈道。"
-    },
-    {
-      "timestamp": "2026-03-13T16:00:00+08:00",
-      "price": 71622.69,
-      "change": "+1.58%",
-      "version": "歐盤開盤量能報",
-      "causal_summary": "BTC 成功消化油價破百負熵，於 16:00 強勢突破 $71k。空頭擠壓效應啟動，彈道鎖定衝擊 $73,777 (ATH)。"
     }
   ]
 }
