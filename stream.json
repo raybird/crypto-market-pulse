@@ -1,8 +1,15 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-14T11:00:00+08:00",
+  "updated_at": "2026-03-14T14:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-14T14:00:00+08:00",
+      "price": 71017.09,
+      "change": "+0.09%",
+      "version": "引力彈簧初步釋放報",
+      "causal_summary": "BTC 成功站上 $71k，驗證 11:00 引力彈簧監控。BlackRock 放棄非主流 ETF 敘事，強化核心資產主權地位，證據密度 V128。"
+    },
     {
       "timestamp": "2026-03-14T11:00:00+08:00",
       "price": 70859.34,
