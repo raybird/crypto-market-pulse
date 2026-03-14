@@ -1,8 +1,15 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-14T14:00:00+08:00",
+  "updated_at": "2026-03-14T20:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-14T20:00:00+08:00",
+      "price": 70717.01,
+      "change": "-0.33%",
+      "version": "結構底座二次校準報",
+      "causal_summary": "BTC 在衝擊 $71k 後進行結構性回踩，正確認 $70.5k 的週末物理地板。USDC 市值逼近 $80B 實體化支付主權敘事，證據密度 V130。"
+    },
     {
       "timestamp": "2026-03-14T14:00:00+08:00",
       "price": 71017.09,
