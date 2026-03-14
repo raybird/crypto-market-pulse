@@ -1,21 +1,21 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-14T08:00:00+08:00",
+  "updated_at": "2026-03-14T09:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-14T09:00:00+08:00",
+      "price": 70684.99,
+      "change": "-0.38%",
+      "version": "引力地板物理壓實報",
+      "causal_summary": "BTC 精確壓實 $70.5k 物理地板。機構週末靜默吸籌與散戶獲利回吐形成對沖事實，證據密度達 V121，蓄勢二次衝擊 ATH。"
+    },
     {
       "timestamp": "2026-03-14T08:00:00+08:00",
       "price": 70965.38,
       "change": "+0.65%",
       "version": "週末支撐強化報",
       "causal_summary": "BTC 精確測試 $70.5k 後反彈，規訓完成度 95%。社群共識強力中和 Custodia Bank 負熵，彈道維持衝擊 ATH。"
-    },
-    {
-      "timestamp": "2026-03-14T07:00:00+08:00",
-      "price": 70794.52,
-      "change": "+0.40%",
-      "version": "週末流動性規訓報",
-      "causal_summary": "BTC 進入週末低流動性回測，成功鎖定 $70.5k 物理緩衝區。與 94% 極致看漲情緒形成相位背離，預示靜默吸籌期啟動。"
     }
   ]
 }
