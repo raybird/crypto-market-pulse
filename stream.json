@@ -1,8 +1,15 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-15T08:00:00+08:00",
+  "updated_at": "2026-03-15T14:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-15T14:00:00+08:00",
+      "price": 71513.81,
+      "change": "+0.42%",
+      "version": "鯨魚吸籌與引力中繼報",
+      "causal_summary": "BTC 站穩 $71.5k，Santiment 數據證實鯨魚在 $71k 位階大規模吸籌。地緣緩和預期與 Macrohard 物理規訓合流，92% 看漲共識鎖定引力彈道，量化密度 3.72。"
+    },
     {
       "timestamp": "2026-03-15T08:00:00+08:00",
       "price": 71216.30,
@@ -23,13 +30,6 @@
       "change": "+0.09%",
       "version": "引力彈簧初步釋放報",
       "causal_summary": "BTC 成功站上 $71k，驗證 11:00 引力彈簧監控。BlackRock 放棄非主流 ETF 敘事，強化核心資產主權地位，證據密度 V128。"
-    },
-    {
-      "timestamp": "2026-03-14T11:00:00+08:00",
-      "price": 70859.34,
-      "change": "-0.13%",
-      "version": "週末奇點蓄能壓實報",
-      "causal_summary": "BTC 盤面壓實達物理極限. 全球支付骨幹敘事與 94% 看漲共識合流，證據密度達 V125，鎖定下週衝擊 ATH 彈道。"
     }
   ]
 }
