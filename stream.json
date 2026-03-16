@@ -1,8 +1,15 @@
 {
   "project": "crypto-market-pulse",
   "pillar": "CRYPTO",
-  "updated_at": "2026-03-15T20:00:00+08:00",
+  "updated_at": "2026-03-16T08:00:00+08:00",
   "history": [
+    {
+      "timestamp": "2026-03-16T08:00:00+08:00",
+      "price": 72779.00,
+      "change": "+2.20%",
+      "version": "ATH 衝擊總動員報",
+      "causal_summary": "BTC 衝擊 $72.7k，驗證昨日沙盒預演之『引力噴發』。2,000 萬枚主權里程碑與宏觀對沖買盤合流，正在物理上『排毒』地緣與人才負熵噪音。量化密度 6.05 (HISTORICAL_ANOMALY)。"
+    },
     {
       "timestamp": "2026-03-15T20:00:00+08:00",
       "price": 71854.40,
@@ -23,13 +30,6 @@
       "change": "+0.37%",
       "version": "週一開盤前夕引力噴發報",
       "causal_summary": "BTC 強勢收復 $71k，驗證了在極度恐懼中的主權吸籌。2,000 萬枚里程碑與 Digital Optimus 官宣形成的雙極共鳴，已將 $70.5k 規訓為鋼鐵地板，彈道鎖定 ATH，證據密度 V138。"
-    },
-    {
-      "timestamp": "2026-03-14T20:00:00+08:00",
-      "price": 70717.01,
-      "change": "-0.33%",
-      "version": "結構底座二次校準報",
-      "causal_summary": "BTC 在衝擊 $71k 後進行結構性回踩，正確認 $70.5k 的週末物理地板。USDC 市值逼近 $80B 實體化支付主權敘事，證據密度 V130。"
     }
   ]
 }
